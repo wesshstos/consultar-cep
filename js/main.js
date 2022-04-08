@@ -5,7 +5,9 @@ let listaCep = document.querySelector('#listaCep')
 let btnCep = document.querySelector('#btnBuscarCep')
 let limparInput = document.querySelector('#limparInput')
 let fieldset = document.querySelector('fieldset')
-
+/**
+ * A REQUISIÇÃO DA API QUANDO CLICAR NO BOTÃO BUSCAR CEP
+ */
 btnCep.addEventListener('click', function (e) {
      e.preventDefault();
 
@@ -13,7 +15,7 @@ btnCep.addEventListener('click', function (e) {
           alert('Preencha os campos pra a requisição')
 
      } else {
-          let urlBase = 'https://viacep.com.br/ws/';
+          let urlBase = 'https://viacep.com.br/ws/'; 
           let parametros = uf.value + '/' + cidade.value + '/' + rua.value + '/json/';
           let callback = '?callback=popularNaoSeiMeuCep';
 
@@ -22,7 +24,9 @@ btnCep.addEventListener('click', function (e) {
           document.body.appendChild(script);
      }
 });
-
+/**
+ * MOSTRANDO A RESPOSTA DO API EM UMA LISTA NÃO ORDENADA 
+ */
 function popularNaoSeiMeuCep(resposta) {
 
      if (!Array.isArray(resposta)) {
@@ -42,14 +46,13 @@ function popularNaoSeiMeuCep(resposta) {
      }
 }
 
-function exibirCep(cep) {
+function exibirCep(cep) { // MOSTRANDO O CEP NO ALERT
      alert(cep);
 }
 
-limparInput.addEventListener('click', () => {
+limparInput.addEventListener('click', () => { // LIMPAR OS INPUTS APÓS OS CLICAR NO BOTÃO LIMPAR CAMPOS
      rua.value = '';
      uf.value = '';
      cidade.value = '';
      fieldset.style.display = 'none'
-     
 } )
