@@ -1,5 +1,3 @@
-//https://viacep.com.br/ws/${uf.value}/${cidade.value}/{rua.value}/json/ 
-
 let rua = document.querySelector('#rua')
 let cidade = document.querySelector('#cidade')
 let uf = document.querySelector('#estado')
