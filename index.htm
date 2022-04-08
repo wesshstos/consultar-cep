@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <title>Consultar CEP</title>
+</head>
+<body>
+     <main>
+          <div class="container">
+               <h2>Consultar CEP</h2>
+
+               <form>
+                    <div class="frm-row">
+                         <label for="cep">CEP</label>
+                         <input placeholder="CEP" type="text" class="cep" id="cep" maxlength="9" autocomplete="off">
+                    </div>
+                    <div class="frm-row">
+                         <label for="">rua</label>
+                         <input placeholder="Rua" type="text" class="rua" id="rua" autocapitalize="on" autocomplete="off">
+                    </div>
+                    <div class="frm-row">
+                         <label for="">bairro</label>
+                         <input type="text" class="bairro" id="bairro" autocapitalize="on" autocomplete="off">
+                    </div>
+                    <div class="frm-row">
+                         <label for="">cidade</label>
+                         <input type="text" class="cidade" id="cidade" autocapitalize="on" autocomplete="off">
+                    </div>
+                    <div class="frm-row">
+                         <label for="">estado</label>
+                         <input type="text" class="estado" id="estado" autocapitalize="on" autocomplete="off">
+                    </div>
+                    <div class="frm-row btns-area">
+                         <buttom id="limparInput" class="btn btn-limpar">Limpar Campos</buttom>
+                    </div>
+               </form>
+
+               <a href="consultar-cep.html">Não sei meu CEP</a>
+          </div>
+          
+     </main>
+     <script src="js/app.js"></script>
+</body>
+</html>

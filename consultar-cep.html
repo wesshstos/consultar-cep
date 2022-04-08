@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <title>Não sei meu CEP</title>
+</head>
+<body>
+     <main>
+          <div class="container">
+               <h2>Não sei meu CEP</h2>
+
+               <form>
+                    <div class="frm-row">
+                         <label for="">rua</label>
+                         <input  placeholder="Avenida Paulista" type="text" class="rua" id="rua" autocapitalize="on" autocomplete="off">
+                    </div>
+                    <div class="frm-row">
+                         <label for="">cidade</label>
+                         <input placeholder="São Paulo" type="text" class="cidade" id="cidade" autocapitalize="on" autocomplete="off">
+                    </div>
+                    <div class="frm-row">
+                         <label for="">estado</label>
+                         <input placeholder="SP" type="text" class="estado" id="estado" autocapitalize="on" autocomplete="off">
+                    </div>
+                    <div class="frm-row btns-area">
+                         <buttom id="btnBuscarCep" class="btn">Buscar CEP</buttom>
+                         <buttom id="limparInput" class="btn btn-limpar">Limpar Campos</buttom>
+                    </div>
+               </form>
+               <fieldset>
+                    <legend>Meus Endereços</legend>
+                    <li id="listaCep" class="listagem-cep"></li>
+               </fieldset>
+          </div>
+          
+     </main>
+     <script src="js/main.js"></script>
+</body>
+</html>
